@@ -1,85 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="USDT Flash Sender - Effortlessly create and send flash USDT transactions. The ultimate blockchain tool, SEO optimized for seamless transactions.">
-  <meta name="keywords" content="USDT Flash, Flash USDT Sender, Crypto Tools, Blockchain Transactions, Fake USDT, Create Flash USDT, Cryptocurrency Tools">
+  <meta name="description" content="Create and send USDT flash transactions seamlessly. Lightning-fast performance, accessibility, and SEO optimized.">
+  <meta name="keywords" content="Flash USDT, USDT transactions, crypto tools, send USDT, blockchain tools">
   <meta name="author" content="USDT Flash Sender Team">
   <meta name="theme-color" content="#4CAF50">
-
-  <!-- Title -->
-  <title>USDT Flash Sender | Create Flash USDT Transactions Effortlessly</title>
-
-  <!-- Open Graph Tags -->
-  <meta property="og:title" content="USDT Flash Sender | Create Flash USDT Transactions Effortlessly">
-  <meta property="og:description" content="Generate and send flash USDT transactions with ease. Trusted blockchain tool for crypto enthusiasts.">
+  <link rel="canonical" href="https://usdtflashsender.github.io/">
+  
+  <!-- Open Graph for Social Media -->
+  <meta property="og:title" content="USDT Flash Sender">
+  <meta property="og:description" content="Effortlessly create and send flash USDT transactions.">
   <meta property="og:image" content="assets/images/logo.png">
   <meta property="og:url" content="https://usdtflashsender.github.io/">
-  <meta property="og:type" content="website">
 
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="USDT Flash Sender | Create Flash USDT Transactions Effortlessly">
-  <meta name="twitter:description" content="Generate and send flash USDT transactions with ease. Trusted blockchain tool for crypto enthusiasts.">
-  <meta name="twitter:image" content="assets/images/logo.png">
+  <!-- Preloading Critical Resources -->
+  <link rel="preload" href="assets/css/styles.min.css" as="style">
+  <link rel="preload" href="assets/js/main.min.js" as="script">
+  <link rel="preload" href="assets/images/logo.png" as="image">
+  <link rel="stylesheet" href="assets/css/styles.min.css">
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://usdtflashsender.github.io/">
-
-  <!-- Favicon -->
-  <link rel="icon" href="assets/images/logo.png" type="image/png">
-
-  <!-- Preconnect for Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/css/styles.min.css">
-  <link rel="preload" href="assets/js/main.min.js" as="script">
-
-  <!-- Robots -->
-  <meta name="robots" content="index, follow">
-
-  <!-- Additional SEO Boost -->
-  <meta name="generator" content="USDT Flash Sender | Blockchain Tools">
-  <meta name="rating" content="general">
-  <meta name="distribution" content="global">
-  <meta name="revisit-after" content="7 days">
-  <meta name="copyright" content="USDT Flash Sender Team">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "USDT Flash Sender",
-    "description": "Generate and send flash USDT transactions effortlessly. The trusted blockchain tool for crypto enthusiasts.",
-    "url": "https://usdtflashsender.github.io/",
-    "author": {
-      "@type": "Organization",
-      "name": "USDT Flash Sender Team"
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://usdtflashsender.github.io/"
-    },
-    "image": "https://usdtflashsender.github.io/assets/images/logo.png",
-    "publisher": {
-      "@type": "Organization",
-      "name": "USDT Flash Sender Team",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://usdtflashsender.github.io/assets/images/logo.png"
-      }
-    }
-  }
-  </script>
+  <title>USDT Flash Sender</title>
 </head>
 <body>
-  <header>
+  <header role="banner">
     <div class="container">
       <img src="assets/images/logo.png" alt="USDT Flash Sender Logo" class="logo">
       <h1>USDT Flash Sender</h1>
@@ -88,32 +38,33 @@
   </header>
 
   <main>
-    <section class="creator-form">
-      <h2>Generate Flash USDT</h2>
+    <!-- Flash USDT Creator Form -->
+    <section class="creator-form" role="region" aria-labelledby="formTitle">
+      <h2 id="formTitle">Generate Flash USDT</h2>
       <form id="usdtForm" aria-label="Flash USDT Creation Form">
         <label for="amount">Amount (USDT):</label>
         <input type="number" id="amount" name="amount" placeholder="Enter amount" required aria-required="true">
+        
         <label for="duration">Duration (Days):</label>
         <input type="number" id="duration" name="duration" placeholder="Enter duration" required aria-required="true">
+        
         <button type="submit" class="generate-button" aria-label="Generate Flash USDT">Generate</button>
       </form>
     </section>
 
-    <section class="payment-section">
-      <h2>Buy Flash USDT</h2>
+    <!-- Buy USDT Section -->
+    <section class="payment-section" role="region" aria-labelledby="paymentTitle">
+      <h2 id="paymentTitle">Buy Flash USDT</h2>
       <p>Test transaction with $0.01.</p>
       <button id="buyButton" class="buy-button" aria-label="Buy Flash USDT">Buy Now</button>
     </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>&copy; 2024 USDT Flash Sender. All rights reserved.</p>
-    <nav>
-      <a href="#creator-form" aria-label="Go to Generate Flash USDT section">Generate Flash USDT</a> |
-      <a href="#payment-section" aria-label="Go to Buy Flash USDT section">Buy Flash USDT</a>
-    </nav>
   </footer>
 
+  <!-- JavaScript -->
   <script src="assets/js/main.min.js" defer></script>
 </body>
 </html>
